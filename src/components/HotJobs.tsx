@@ -18,27 +18,27 @@ export default function HotJobs() {
   const jobs: Job[] = [
     {
       id: 1,
-      title: "Commercial Cleaning",
+      title: "Cleaning",
       category: "Hospitality",
-      image: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=600&q=80",
+      image: "/cleaner.jpg",
     },
     {
       id: 2,
-      title: "Elderly Caregiving",
+      title: "Caregiving",
       category: "Healthcare",
-      image: "https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&w=600&q=80",
+      image: "/caregiver.jpg",
     },
     {
       id: 3,
-      title: "Housemaid Placements",
+      title: "Housemaid ",
       category: "Hospitality",
-      image: "https://images.unsplash.com/photo-1581579438747-1dc8d17bbce4?auto=format&fit=crop&w=600&q=80",
+      image: "/Housemaid.jpg",
     },
     {
       id: 4,
-      title: "Heavy Vehicle Driver",
+      title: "Driver",
       category: "Skilled Trades",
-      image: "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=600&q=80",
+      image: "/driver.jpg",
     },
   ];
 

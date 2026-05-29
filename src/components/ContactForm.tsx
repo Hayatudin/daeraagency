@@ -5,7 +5,7 @@ export default function ContactForm() {
   return (
     <section id="contact" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:items-stretch">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:items-center">
           {/* Contact Details Column */}
           <div className="lg:col-span-5 flex flex-col justify-between gap-8">
             <div className="flex flex-col gap-5 text-left">
@@ -82,9 +82,9 @@ export default function ContactForm() {
 
           {/* Map Column (replaces form) */}
           <div className="lg:col-span-7">
-            <div className="rounded-[2rem] overflow-hidden border border-brand-100 shadow-xl h-full min-h-[450px]">
+            <div className="rounded-[2rem] overflow-hidden border border-brand-100 shadow-xl h-[380px] lg:h-[400px] w-full">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.5255476344795!2d38.7834567!3d8.9902033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b85aaf4cfb069%3A0xc36a44c538cb339c!2sAddis%20Ababa!5e0!3m2!1sen!2set!4v1716942000000!5m2!1sen!2set"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d390.99973492329735!2d38.68584766842883!3d8.979823775800353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2set!4v1780038109580!5m2!1sen!2set"
                 className="w-full h-full border-0"
                 allowFullScreen
                 loading="lazy"

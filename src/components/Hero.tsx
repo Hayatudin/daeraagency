@@ -30,7 +30,7 @@ export default function Hero() {
             </h1>
 
             <p className="text-base sm:text-lg text-navy-600 max-w-xl mx-auto lg:mx-0 leading-relaxed">
-              DAERA connects talented professionals with premier employers across Asian Arab countries like Saudi Arabia, UAE, Kuwait, Bahrain, Jordan, Oman, Qatar, Lebanon and beyond. We streamline visa processing, legal documentation, and job placements to shape a secure career path.
+              DAERA connects talented professionals with premier employers across Saudi Arabia, UAE, Kuwait, Jordan, and beyond.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mt-2">
