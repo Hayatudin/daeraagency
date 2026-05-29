@@ -43,7 +43,7 @@ html {
 
 body {
   font-family: var(--font-sans);
-  background-color: #fcfbfe;
+  background-color: #FAF9F6;
   color: #1e293b;
   overflow-x: hidden;
 }
@@ -78,7 +78,7 @@ body {
 }
 
 .gradient-bg-purple {
-  background: linear-gradient(135deg, #f0f7ff 0%, #e0effe 50%, #f8fafc 100%);
+  background: linear-gradient(135deg, #f9f8f6 0%, #f1effc 50%, #FAF9F6 100%);
 }
 
 .gradient-bg-brand {
@@ -121,4 +121,20 @@ body {
 
 .animate-pulse-slow {
   animation: pulse-slow 8s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Infinite Marquee Slider Animations */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 30s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
 }

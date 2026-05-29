@@ -58,14 +58,14 @@ export default function HotJobs() {
   };
 
   return (
-    <section id="jobs" className="py-24 bg-transparent border-t border-brand-100/30">
+    <section id="jobs" className="py-24 bg-transparent border-t border-navy-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
         {/* Heading */}
         <div className="text-center flex flex-col items-center gap-3 mb-16">
-          <span className="text-xs font-bold uppercase tracking-wider text-brand-600 bg-brand-50 px-3.5 py-1.5 rounded-full border border-brand-100">
+          <span className="text-xs font-bold uppercase tracking-wider text-[#0079FE] bg-brand-50 px-3.5 py-1.5 rounded-full border border-brand-100">
             Latest Opportunities
           </span>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-navy-950 tracking-tight">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-navy-950 tracking-tight font-sans">
             Hot Job Openings
           </h2>
           <p className="text-navy-500 max-w-xl text-sm sm:text-base leading-relaxed">
@@ -78,7 +78,7 @@ export default function HotJobs() {
           {jobs.map(job => (
             <div
               key={job.id}
-              className="relative h-80 rounded-[2.5rem] overflow-hidden group hover:shadow-xl transition-all duration-300"
+              className="relative h-80 rounded-[2.5rem] overflow-hidden group hover:shadow-xl transition-all duration-300 border border-navy-100/30"
             >
               {/* Full Card Cover Image */}
               <img
@@ -92,21 +92,21 @@ export default function HotJobs() {
 
               {/* Title overlay positioned at bottom-left */}
               <div className="absolute bottom-5 left-7 text-white z-10 pr-16 text-left">
-                <h3 className="text-base font-extrabold tracking-wide uppercase leading-tight">
+                <h3 className="text-base font-extrabold tracking-wide uppercase leading-tight font-sans">
                   {job.title}
                 </h3>
               </div>
 
               {/* Bottom-Right Organic Border-Radius Cutout */}
-              <div className="absolute bottom-0 right-0 w-16 h-16 rounded-tl-[1.8rem] flex items-center justify-center z-10" style={{ background: '#fcfbfe' }}>
+              <div className="absolute bottom-0 right-0 w-16 h-16 rounded-tl-[1.8rem] flex items-center justify-center z-10" style={{ background: '#FAF9F6' }}>
                 {/* Curved transitions for organic nested radius */}
-                <div className="absolute bottom-16 right-0 w-3 h-3 bg-transparent rounded-br-[0.8rem]" style={{ boxShadow: '3px 3px 0 0 #fcfbfe' }}></div>
-                <div className="absolute bottom-0 right-16 w-3 h-3 bg-transparent rounded-br-[0.8rem]" style={{ boxShadow: '3px 3px 0 0 #fcfbfe' }}></div>
+                <div className="absolute bottom-16 right-0 w-3 h-3 bg-transparent rounded-br-[0.8rem]" style={{ boxShadow: '3px 3px 0 0 #FAF9F6' }}></div>
+                <div className="absolute bottom-0 right-16 w-3 h-3 bg-transparent rounded-br-[0.8rem]" style={{ boxShadow: '3px 3px 0 0 #FAF9F6' }}></div>
 
                 {/* Round button in the center of the cutout */}
                 <button
                   onClick={() => handleApply(job)}
-                  className="w-11 h-11 rounded-full bg-[#bae0fd] hover:bg-brand-500 hover:scale-105 text-white flex items-center justify-center shadow-sm transition-all duration-300 group/btn"
+                  className="w-11 h-11 rounded-full bg-[#0079FE] hover:bg-[#0263e2] hover:scale-105 text-white flex items-center justify-center shadow-sm transition-all duration-300 group/btn"
                 >
                   <svg
                     className="w-4.5 h-4.5 stroke-white stroke-[2.5] transform group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform"
